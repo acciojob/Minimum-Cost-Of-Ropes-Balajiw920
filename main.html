@@ -2,16 +2,21 @@
 
 <html>
 
-<head>
-</head>
+  <head>
+  </head>
 
-<body>
-    <form id="form" onsubmit = "minCost(event)">
-      <input type="text" />
-      <input type="submit" value="Submit"/>
+  <body>
+    <form onsubmit="return false" id="form">
+      <label for="rope-lengths">Enter rope lengths:</label>
+      <input type="text" id="rope-lengths">
+      <button type="button" value="submit" onclick="calculateMinCost()">Calculate</button>
     </form>
     <div id="result"></div>
-    <script type="text/javascript" src="./script.js"></script>
-</body>
+
+    <script type="text/javascript" src="./script.js">
+    </script>
+
+
+  </body>
 
 </html>
